@@ -1,16 +1,28 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, Michael')  # Press Ctrl+F8 to toggle the breakpoint.
+import cv2
+import matplotlib.pyplot as plt
+import os
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+#cap = cv2.VideoCapture(0)
+#ret, frame = cap.read()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#img1 = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+#plt.imshow(img1)
+#plt.title("ABCD")
+#plt.xticks([])
+#plt.yticks([])
+#plt.show()
+
+#cv2.imwrite('Michael.png',img1)
+#os.remove("Michael.png")
+
+#f = open("Database","a")
+#f.write("Circle\n")
+#f.close()
+
+#f = open("Database","r")
+#print(f.readline())
+#os.remove('Database')
+
+#cap.release()
