@@ -1,5 +1,5 @@
 sudo mkdir opencv
-sudo cd opencv
+cd opencv
 
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install build-essential cmake pkg-config -y
@@ -19,14 +19,14 @@ sudo python3 get-pip.py
 
 sudo pip install numpy
 
-sudo cd opencv-3.3.1
+cd opencv-3.3.1
 sudo mkdir build
-sudo cd build
+cd build
 
-sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
-sudo make -j2
-sudo make install
-sudo ldconfig
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make -j2
+make install
+ldconfig
 
 sudo find /usr/local/lib -type f -name "cv2.*.so" -exec sh -c 'x="{}"; echo mv "$x" "$(dirname ${x})/cv2.so"' \;
 
