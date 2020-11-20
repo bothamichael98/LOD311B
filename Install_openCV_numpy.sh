@@ -1,5 +1,5 @@
 sudo mkdir opencv
-cd opencv
+sudo cd opencv
 
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install build-essential cmake pkg-config -y
@@ -10,21 +10,21 @@ sudo apt-get install libgtk2.0-dev libgtk-3-dev -y
 sudo apt-get install libatlas-base-dev gfortran -y
 sudo apt-get install python2.7-dev python3-dev -y
 
-wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.3.1.zip
-unzip opencv.zip
+sudo wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.3.1.zip
+sudo unzip opencv.zip
 
-wget https://bootstrap.pypa.io/get-pip.py
+sudo wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo python3 get-pip.py
 
 sudo pip install numpy
 
-cd opencv-3.3.1
-mkdir build
-cd build
+sudo cd opencv-3.3.1
+sudo mkdir build
+sudo cd build
 
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
-make -j2
+sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+sudo make -j2
 sudo make install
 sudo ldconfig
 
